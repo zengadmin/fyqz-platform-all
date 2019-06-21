@@ -12,6 +12,7 @@ import org.springframework.stereotype.Component;
 import java.util.Date;
 
 /**
+ * @author zengchao
  * jwt工具类
  */
 @Data
