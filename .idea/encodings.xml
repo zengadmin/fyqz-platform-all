@@ -12,17 +12,12 @@
     <file url="file://$PROJECT_DIR$/fyqz-scenario-provider" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/fyqz-scenario-provider/fyqz-scenario-provider-api" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/fyqz-scenario-provider/fyqz-server-scenario" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/fyqz-server-deduce" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/fyqz-server-deduce/fyqz-deduce-provider-api" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/fyqz-server-eureka" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/fyqz-server-monitor" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/fyqz-server-websocket" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/fyqz-server-zuul" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/fyqz-user-provider" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/fyqz-user-provider/fyqz-server-user" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/fyqz-user-provider/fyqz-user-provider-api" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/fyqz-websocket-provider" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/fyqz-websocket-provider/fyqz-websocket-provider-api" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>
