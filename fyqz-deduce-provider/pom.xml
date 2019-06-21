@@ -14,6 +14,7 @@
     <name>fyqz-deduce-provider</name>
     <modules>
         <module>fyqz-deduce-provider-api</module>
+        <module>fyqz-server-deduce</module>
     </modules>
     <packaging>pom</packaging>
 

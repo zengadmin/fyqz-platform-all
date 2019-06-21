@@ -22,70 +22,60 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="fyqz-server-chess" />
       </profile>
       <profile default="false" name="Annotation profile for fyqz-server-scenario" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="fyqz-server-scenario" />
       </profile>
       <profile default="false" name="Annotation profile for fyqz-scenario-provider-api" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="fyqz-scenario-provider-api" />
       </profile>
       <profile default="false" name="Annotation profile for fyqz-chess-provider-api" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="fyqz-chess-provider-api" />
       </profile>
       <profile default="false" name="Annotation profile for fyqz-server-user" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="fyqz-server-user" />
       </profile>
       <profile default="false" name="Annotation profile for fyqz-user-provider-api" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="fyqz-user-provider-api" />
       </profile>
       <profile default="false" name="Annotation profile for fyqz-server-zuul" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="fyqz-server-zuul" />
       </profile>
       <profile default="false" name="Annotation profile for fyqz-server-eureka" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="fyqz-server-eureka" />
       </profile>
       <profile default="false" name="Annotation profile for fyqz-server-monitor" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="fyqz-server-monitor" />
       </profile>
       <profile default="false" name="Annotation profile for fyqz-common" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="fyqz-common" />
       </profile>
       <profile default="false" name="Annotation profile for fyqz-deduce-provider-api" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
