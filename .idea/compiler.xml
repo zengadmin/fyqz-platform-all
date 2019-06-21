@@ -98,17 +98,32 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="fyqz-websocket-provider-api" />
+      </profile>
+      <profile default="false" name="Annotation profile for fyqz-deduce-provider-api" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+      </profile>
+      <profile default="false" name="Annotation profile for fyqz-server-deduce" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="fyqz-server-deduce" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="fyqz-chess-provider" target="1.8" />
       <module name="fyqz-chess-provider-api" target="1.8" />
       <module name="fyqz-common" target="1.8" />
+      <module name="fyqz-deduce-provider" target="1.8" />
+      <module name="fyqz-deduce-provider-api" target="1.8" />
       <module name="fyqz-platform" target="1.8" />
       <module name="fyqz-scenario-provider" target="1.8" />
       <module name="fyqz-scenario-provider-api" target="1.8" />
       <module name="fyqz-server-chess" target="1.8" />
+      <module name="fyqz-server-deduce" target="1.8" />
       <module name="fyqz-server-eureka" target="1.8" />
       <module name="fyqz-server-monitor" target="1.8" />
       <module name="fyqz-server-scenario" target="1.8" />

@@ -25,14 +25,17 @@ eureka:
 zuul:
   routes:
     fyqz-service-chess:
-      path: /api-chess/** # /api-chess开头的请求，全部转发到fyqz-service-chess服务中去
+      path: /api-chess/** # /api-chess开头的请求，全部转发到fyqz-server-chess服务中去
       service-id: fyqz-server-chess # 应用名称
     fyqz-service-user:
-      path: /api-user/** # /api-user开头的请求，全部转发到 fyqz-service-user服务中去
+      path: /api-user/** # /api-user开头的请求，全部转发到 fyqz-server-user服务中去
       service-id: fyqz-server-user # 应用名称
     fyqz-service-scenario:
-      path: /api-scenario/** # /api-scenario开头的请求，全部转发到 fyqz-service-user服务中去
+      path: /api-scenario/** # /api-scenario开头的请求，全部转发到 fyqz-server-scenario服务中去
       service-id: fyqz-server-scenario # 应用名称
+    fyqz-service-deduce:
+      path: /api-deduce/** # /api-deduce开头的请求，全部转发到 fyqz-server-deduce服务中去
+      service-id: fyqz-server-deduce # 应用名称
   SendErrorFilter:
     post:
       disable: true

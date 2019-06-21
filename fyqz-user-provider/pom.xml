@@ -14,10 +14,12 @@
     <artifactId>fyqz-user-provider</artifactId>
     <name>fyqz-user-provider</name>
     <packaging>pom</packaging>
+
     <modules>
         <module>fyqz-user-provider-api</module>
         <module>fyqz-server-user</module>
     </modules>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -30,11 +32,6 @@
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context-support</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-jdbc</artifactId>
-            <version>5.0.7.RELEASE</version>
         </dependency>
         <dependency>
             <groupId>org.redisson</groupId>

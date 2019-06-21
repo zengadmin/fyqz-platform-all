@@ -7,10 +7,12 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/fyqz-deduce-provider/fyqz-server-deduce/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/fyqz-server-deduce/pom.xml" />
         <option value="$PROJECT_DIR$/fyqz-websocket-provider/pom.xml" />
       </set>
     </option>
