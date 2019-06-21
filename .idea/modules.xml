@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/fyqz-chess-provider/fyqz-chess-provider.iml" filepath="$PROJECT_DIR$/fyqz-chess-provider/fyqz-chess-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fyqz-chess-provider/fyqz-chess-provider-api/fyqz-chess-provider-api.iml" filepath="$PROJECT_DIR$/fyqz-chess-provider/fyqz-chess-provider-api/fyqz-chess-provider-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fyqz-common/fyqz-common.iml" filepath="$PROJECT_DIR$/fyqz-common/fyqz-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fyqz-platform.iml" filepath="$PROJECT_DIR$/fyqz-platform.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fyqz-scenario-provider/fyqz-scenario-provider.iml" filepath="$PROJECT_DIR$/fyqz-scenario-provider/fyqz-scenario-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fyqz-scenario-provider/fyqz-scenario-provider-api/fyqz-scenario-provider-api.iml" filepath="$PROJECT_DIR$/fyqz-scenario-provider/fyqz-scenario-provider-api/fyqz-scenario-provider-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fyqz-chess-provider/fyqz-server-chess/fyqz-server-chess.iml" filepath="$PROJECT_DIR$/fyqz-chess-provider/fyqz-server-chess/fyqz-server-chess.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fyqz-server-eureka/fyqz-server-eureka.iml" filepath="$PROJECT_DIR$/fyqz-server-eureka/fyqz-server-eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fyqz-server-monitor/fyqz-server-monitor.iml" filepath="$PROJECT_DIR$/fyqz-server-monitor/fyqz-server-monitor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fyqz-scenario-provider/fyqz-server-scenario/fyqz-server-scenario.iml" filepath="$PROJECT_DIR$/fyqz-scenario-provider/fyqz-server-scenario/fyqz-server-scenario.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fyqz-user-provider/fyqz-server-user/fyqz-server-user.iml" filepath="$PROJECT_DIR$/fyqz-user-provider/fyqz-server-user/fyqz-server-user.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fyqz-server-zuul/fyqz-server-zuul.iml" filepath="$PROJECT_DIR$/fyqz-server-zuul/fyqz-server-zuul.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fyqz-user-provider/fyqz-user-provider.iml" filepath="$PROJECT_DIR$/fyqz-user-provider/fyqz-user-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fyqz-user-provider/fyqz-user-provider-api/fyqz-user-provider-api.iml" filepath="$PROJECT_DIR$/fyqz-user-provider/fyqz-user-provider-api/fyqz-user-provider-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fyqz-websocket-provider/fyqz-websocket-provider-api/fyqz-websocket-provider-api.iml" filepath="$PROJECT_DIR$/fyqz-websocket-provider/fyqz-websocket-provider-api/fyqz-websocket-provider-api.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,84 @@
+spring:
+  application:
+    name: fyqz-server-user # 应用名称
+  redis:
+    database: 0
+    host: 127.0.0.1
+    port: 6379
+    password:
+    timeout: 6000ms  # 连接超时时长（毫秒）
+    jedis:
+      pool:
+        max-active: 1000  # 连接池最大连接数（使用负值表示没有限制）
+        max-wait: -1ms      # 连接池最大阻塞等待时间（使用负值表示没有限制）
+        max-idle: 10      # 连接池中的最大空闲连接
+        min-idle: 5       # 连接池中的最小空闲连接
+  devtools:
+     restart:
+        trigger-file: trigger.txt
+  datasource:
+      type: com.alibaba.druid.pool.DruidDataSource
+      driverClassName: com.mysql.jdbc.Driver
+      druid:
+          url: jdbc:mysql://127.0.0.1:3306/fyqz_platform?useSSL=true&allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8
+          username: root
+          password: root
+          initial-size: 10
+          max-active: 100
+          min-idle: 10
+          max-wait: 60000
+          pool-prepared-statements: true
+          max-pool-prepared-statement-per-connection-size: 20
+          time-between-eviction-runs-millis: 60000
+          min-evictable-idle-time-millis: 300000
+          #validation-query: SELECT 1 FROM DUAL
+          test-while-idle: true
+          test-on-borrow: false
+          test-on-return: false
+          stat-view-servlet:
+              enabled: true
+              url-pattern: /druid/*
+              #login-username: admin
+              #login-password: admin
+          filter:
+              stat:
+                  log-slow-sql: true
+                  slow-sql-millis: 1000
+                  merge-sql: false
+              wall:
+                  config:
+                      multi-statement-allow: true
+   #服务监控
+  boot:
+    admin:
+      client:
+        url: http://127.0.0.1:8080
+        username: fyqz
+        password: 123456
+  security:
+    user:
+      name: fyqz
+      password: 123456
+
+eureka:
+  instance:
+    hostname: localhost # 服务消费者应用所在的主机(本地测试的话，就使用localhost即可；当然你也可以在host文件中配置一个虚拟域名；但必须要在本地浏览器中可以访问才行)
+  client:
+    service-url:
+      defaultZone: http://${spring.security.user.name}:${spring.security.user.password}@127.0.0.1:18761/eureka,http://${spring.security.user.name}:${spring.security.user.password}@127.0.0.1:28761/eureka # 指定eureka服务器集群列表地址
+
+#feign是自带断路器hystrix的，只是没有默认打开hystrix。需要在配置文件中配置打开，将feign.hystrix.enabled设置为true，则hystrix断路器方可生效
+feign:
+  hystrix:
+    enabled: true
+
+management:
+  security:
+    enabled: false # 关闭安全验证（或者设置用户名和密码）。客户端访问一些接口的时候，才不会出现：401 Unauthorized权限的错误 ——
+  endpoints:
+    web:
+      exposure:
+        include: "*"   #暴露所有的端点我们可以看到更多的服务实例相关信息，
+  endpoint:
+    health:
+      show-details: ALWAYS   #health endpoint是否必须显示全部细节

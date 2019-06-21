@@ -1,0 +1,25 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: fyqz-server-monitor # 应用名称（如果项目自身引入了 spring-cloud-config配置中心的话，配置文件的名称最好用这个应用名称来命名）
+  security:
+    user:
+      name: fyqz
+      password: 123456
+
+#eureka
+eureka:
+  client:
+    service-url:
+      defaultZone: http://${spring.security.user.name}:${spring.security.user.password}@127.0.0.1:18761/eureka,http://${spring.security.user.name}:${spring.security.user.password}@root:root@127.0.0.1:28761/eureka # 指定eureka服务器集群列表地址
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: ALWAYS

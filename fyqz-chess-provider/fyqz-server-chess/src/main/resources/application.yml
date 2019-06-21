@@ -1,0 +1,41 @@
+spring:
+  application:
+    name: fyqz-server-chess # 应用名称
+   #服务监控
+  boot:
+    admin:
+      client:
+        url: http://127.0.0.1:8080
+        username: fyqz
+        password: 123456
+  security:
+    user:
+      name: fyqz
+      password: 123456
+
+eureka:
+  instance:
+    hostname: localhost # 服务消费者应用所在的主机(本地测试的话，就使用localhost即可；当然你也可以在host文件中配置一个虚拟域名；但必须要在本地浏览器中可以访问才行)
+  client:
+    service-url:
+      defaultZone: http://${spring.security.user.name}:${spring.security.user.password}@127.0.0.1:18761/eureka,http://${spring.security.user.name}:${spring.security.user.password}@127.0.0.1:28761/eureka # 指定eureka服务器集群列表地址
+
+#feign是自带断路器hystrix的，只是没有默认打开hystrix。需要在配置文件中配置打开，将feign.hystrix.enabled设置为true，则hystrix断路器方可生效
+feign:
+  hystrix:
+    enabled: true
+
+management:
+  security:
+    enabled: false # 关闭安全验证（或者设置用户名和密码）。客户端访问一些接口的时候，才不会出现：401 Unauthorized权限的错误 ——
+  endpoints:
+    web:
+      exposure:
+        include: "*"   #暴露所有的端点我们可以看到更多的服务实例相关信息，
+  endpoint:
+    health:
+      show-details: ALWAYS   #health endpoint是否必须显示全部细节
+
+
+swagger:
+  base-package: com.fyqz

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <resourceExtensions />
+    <wildcardResourcePatterns>
+      <entry name="!?*.java" />
+      <entry name="!?*.form" />
+      <entry name="!?*.class" />
+      <entry name="!?*.groovy" />
+      <entry name="!?*.scala" />
+      <entry name="!?*.flex" />
+      <entry name="!?*.kt" />
+      <entry name="!?*.clj" />
+      <entry name="!?*.aj" />
+    </wildcardResourcePatterns>
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="false">
+        <processorPath useClasspath="true" />
+      </profile>
+      <profile default="false" name="Annotation profile for fyqz-server-chess" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="fyqz-server-chess" />
+      </profile>
+      <profile default="false" name="Annotation profile for fyqz-server-scenario" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="fyqz-server-scenario" />
+      </profile>
+      <profile default="false" name="Annotation profile for fyqz-scenario-provider-api" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="fyqz-scenario-provider-api" />
+      </profile>
+      <profile default="false" name="Annotation profile for fyqz-chess-provider-api" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="fyqz-chess-provider-api" />
+      </profile>
+      <profile default="false" name="Annotation profile for fyqz-server-user" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="fyqz-server-user" />
+      </profile>
+      <profile default="false" name="Annotation profile for fyqz-user-provider-api" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="fyqz-user-provider-api" />
+      </profile>
+      <profile default="false" name="Annotation profile for fyqz-server-zuul" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="fyqz-server-zuul" />
+      </profile>
+      <profile default="false" name="Annotation profile for fyqz-server-eureka" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="fyqz-server-eureka" />
+      </profile>
+      <profile default="false" name="Annotation profile for fyqz-server-monitor" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="fyqz-server-monitor" />
+      </profile>
+      <profile default="false" name="Annotation profile for fyqz-common" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="fyqz-common" />
+      </profile>
+      <profile default="false" name="Annotation profile for fyqz-server-websocket" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+      </profile>
+      <profile default="false" name="Annotation profile for fyqz-websocket-provider-api" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="fyqz-websocket-provider-api" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="fyqz-chess-provider" target="1.8" />
+      <module name="fyqz-chess-provider-api" target="1.8" />
+      <module name="fyqz-common" target="1.8" />
+      <module name="fyqz-platform" target="1.8" />
+      <module name="fyqz-scenario-provider" target="1.8" />
+      <module name="fyqz-scenario-provider-api" target="1.8" />
+      <module name="fyqz-server-chess" target="1.8" />
+      <module name="fyqz-server-eureka" target="1.8" />
+      <module name="fyqz-server-monitor" target="1.8" />
+      <module name="fyqz-server-scenario" target="1.8" />
+      <module name="fyqz-server-user" target="1.8" />
+      <module name="fyqz-server-websocket" target="1.8" />
+      <module name="fyqz-server-zuul" target="1.8" />
+      <module name="fyqz-user-provider" target="1.8" />
+      <module name="fyqz-user-provider-api" target="1.8" />
+      <module name="fyqz-websocket-provider" target="1.8" />
+      <module name="fyqz-websocket-provider-api" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
