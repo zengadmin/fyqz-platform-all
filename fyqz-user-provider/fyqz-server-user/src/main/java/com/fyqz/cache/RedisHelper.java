@@ -103,6 +103,7 @@ public final class RedisHelper implements CacheManager {
 
 	@Override
 	public final String type(final String key) {
+
 		return redisTemplate.type(key).getClass().getName();
 	}
 
