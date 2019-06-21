@@ -25,7 +25,6 @@ import javax.servlet.http.HttpServletRequest;
 
 /**
  * zuul网关过滤器
- * zuul不仅只是路由，并且还能过滤，做一些安全验证。
  * 可以通过shouldFilter()方法返回值为false，来标明过滤器是否起作用
  */
 @Slf4j
