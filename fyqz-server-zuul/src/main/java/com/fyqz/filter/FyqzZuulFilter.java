@@ -1,7 +1,6 @@
 package com.fyqz.filter;
 
 import com.fyqz.config.IgnoreProperties;
-import com.fyqz.exception.BusinessException;
 import com.fyqz.model.User;
 import com.fyqz.result.Result;
 import com.fyqz.rpc.UserServiceFeign;
@@ -19,6 +18,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.netflix.zuul.filters.support.FilterConstants;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Component;
+import org.springframework.web.bind.annotation.RequestMethod;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
@@ -55,6 +55,11 @@ public class FyqzZuulFilter extends ZuulFilter {
 
     @Override
     public boolean shouldFilter() {
+        RequestContext context=RequestContext.getCurrentContext();
+        HttpServletRequest request=context.getRequest();
+        if(request.getMethod().equals(RequestMethod.OPTIONS.name())){
+            return false;
+        }
         return true;
     }
 
@@ -72,22 +77,30 @@ public class FyqzZuulFilter extends ZuulFilter {
         String token = request.getHeader("TOKEN");
         //TOKEN为空
         if (StringUtils.isBlank(token)) {
-            throw  new BusinessException(HttpStatus.UNAUTHORIZED.value(),"TOKEN不能为空");
+            setUnanHorizedResponse(currentContext);
+            return null;
         }
         //用户为空
         Claims claims = jwtUtils.getClaimByToken(token);
         if (claims == null || jwtUtils.isTokenExpired(claims.getExpiration())) {
-            throw  new BusinessException(HttpStatus.UNAUTHORIZED.value(),"TOKEN失效，请重新登录");
+            setUnanHorizedResponse(currentContext);
+            return null;
         }
         // TOKEN失效
         Result result = userServiceFeign.queryUser(claims.getSubject());
         if (DataUtil.isNotEmpty(result) && DataUtil.isNotEmpty(result.getData())) {
             User user = (User) result.getData();
             if (!user.getToken().equals(token)) {
-                throw  new BusinessException(HttpStatus.UNAUTHORIZED.value(),"TOKEN失效，请重新登录");
+                setUnanHorizedResponse(currentContext);
+                return null;
             }
         }
         request.setAttribute(USER_KEY, claims.getSubject());
         return null;
+    }
+    public void setUnanHorizedResponse(RequestContext requestContext){
+        Result result=new Result();
+        result.setCode(HttpStatus.UNAUTHORIZED.value());
+        requestContext.setResponseBody("");
     }
 }
